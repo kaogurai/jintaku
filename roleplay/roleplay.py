@@ -265,7 +265,7 @@ class Roleplay(BaseCog):
                 "https://media1.tenor.com/images/d38554c6e23b86c81f8d4a3764b38912/tenor.gif?itemid=11379131",
                 "https://media1.tenor.com/images/05a64a05e5501be2b1a5a734998ad2b2/tenor.gif?itemid=11379130",
             ],
-            "poke": [
+            "tap": [
                 "https://img2.gelbooru.com/images/07/86/078690a58e0b816e8e00cc58e090b499.gif",
                 "https://img2.gelbooru.com/images/b7/89/b789369db69022afde47a1ed62598ec6.gif",
                 "https://img2.gelbooru.com/images/49/ec/49ecc543b7b0b680ad0c27c29e942a21.gif",
@@ -477,11 +477,11 @@ class Roleplay(BaseCog):
 
     @commands.command()
     @commands.bot_has_permissions(embed_links=True)
-    async def poke(self, ctx, *, user: discord.Member):
-        """Pokes a user!"""
+    async def tap(self, ctx, *, user: discord.Member):
+        """Taps a user!"""
 
         author = ctx.message.author
-        images = await self.config.poke()
+        images = await self.config.tap()
 
         nekos = await self.fetch_nekos_life(ctx, "poke")
         images.extend(nekos)
@@ -491,7 +491,7 @@ class Roleplay(BaseCog):
 
         # Build Embed
         embed = discord.Embed()
-        embed.description = f"**{author.mention} pokes {user.mention}**"
+        embed.description = f"**{author.mention} taps {user.mention}**"
         embed.set_footer(text="Made with the help of nekos.life")
         embed.set_image(url=images[i])
         await ctx.send(embed=embed)
