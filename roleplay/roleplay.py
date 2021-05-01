@@ -309,7 +309,7 @@ class Roleplay(BaseCog):
         i = randint(0, mn - 1)
 
         # Build Embed
-        embed = discord.Embed()
+        embed = discord.Embed(color=await ctx.embed_color())
         embed.description = f"**{author.mention} hugs {user.mention}**"
         embed.set_footer(text="Made with the help of nekos.life")
         embed.set_image(url=images[i])
@@ -330,7 +330,7 @@ class Roleplay(BaseCog):
         i = randint(0, mn - 1)
 
         # Build Embed
-        embed = discord.Embed()
+        embed = discord.Embed(color=await ctx.embed_color())
         embed.description = f"**{author.mention} cuddles {user.mention}**"
         embed.set_footer(text="Made with the help of nekos.life")
         embed.set_image(url=images[i])
@@ -351,7 +351,7 @@ class Roleplay(BaseCog):
         i = randint(0, mn - 1)
 
         # Build Embed
-        embed = discord.Embed()
+        embed = discord.Embed(color=await ctx.embed_color())
         embed.description = f"**{author.mention} kisses {user.mention}**"
         embed.set_footer(text="Made with the help of nekos.life")
         embed.set_image(url=images[i])
@@ -372,7 +372,7 @@ class Roleplay(BaseCog):
         i = randint(0, mn - 1)
 
         # Build Embed
-        embed = discord.Embed()
+        embed = discord.Embed(color=await ctx.embed_color())
         embed.description = f"**{author.mention} slaps {user.mention}**"
         embed.set_footer(text="Made with the help of nekos.life")
         embed.set_image(url=images[i])
@@ -393,7 +393,7 @@ class Roleplay(BaseCog):
         i = randint(0, mn - 1)
 
         # Build Embed
-        embed = discord.Embed()
+        embed = discord.Embed(color=await ctx.embed_color())
         embed.description = f"**{author.mention} pats {user.mention}**"
         embed.set_footer(text="Made with the help of nekos.life")
         embed.set_image(url=images[i])
@@ -410,7 +410,7 @@ class Roleplay(BaseCog):
         i = randint(0, mn - 1)
 
         # Build Embed
-        embed = discord.Embed()
+        embed = discord.Embed(color=await ctx.embed_color())
         embed.description = f"**{author.mention} licks {user.mention}**"
         embed.set_footer(text="Made with the help of nekos.life")
         embed.set_image(url=images[i])
@@ -427,7 +427,7 @@ class Roleplay(BaseCog):
         i = randint(0, mn - 1)
 
         # Build Embed
-        embed = discord.Embed()
+        embed = discord.Embed(color=await ctx.embed_color())
         embed.description = f"**{author.mention} highfives {user.mention}**"
         embed.set_footer(text="Made with the help of nekos.life")
         embed.set_image(url=images[i])
@@ -448,7 +448,7 @@ class Roleplay(BaseCog):
         i = randint(0, mn - 1)
 
         # Build Embed
-        embed = discord.Embed()
+        embed = discord.Embed(color=await ctx.embed_color())
         embed.description = f"**{author.mention} feeds {user.mention}**"
         embed.set_footer(text="Made with the help of nekos.life")
         embed.set_image(url=images[i])
@@ -469,7 +469,7 @@ class Roleplay(BaseCog):
         i = randint(0, mn - 1)
 
         # Build Embed
-        embed = discord.Embed()
+        embed = discord.Embed(color=await ctx.embed_color())
         embed.description = f"**{author.mention} tickles {user.mention}**"
         embed.set_footer(text="Made with the help of nekos.life")
         embed.set_image(url=images[i])
@@ -490,7 +490,7 @@ class Roleplay(BaseCog):
         i = randint(0, mn - 1)
 
         # Build Embed
-        embed = discord.Embed()
+        embed = discord.Embed(color=await ctx.embed_color())
         embed.description = f"**{author.mention} taps {user.mention}**"
         embed.set_footer(text="Made with the help of nekos.life")
         embed.set_image(url=images[i])
@@ -511,7 +511,7 @@ class Roleplay(BaseCog):
         i = randint(0, mn - 1)
 
         # Build Embed
-        embed = discord.Embed()
+        embed = discord.Embed(color=await ctx.embed_color())
         embed.description = f"**{author.mention} is smug**"
         embed.set_footer(text="Made with the help of nekos.life")
         embed.set_image(url=images[i])
