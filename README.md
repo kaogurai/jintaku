@@ -1,4 +1,8 @@
 <img src="https://github.com/Jintaku/Jintaku-Cogs-V3/blob/master/screenshots/Jintaku-slide.png" width="100%">
+# Fork Changelog
+
+- Renamed `poke` command to `tap`
+- Added color to all roleplay commands
 
 # Installation
 
