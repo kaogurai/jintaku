@@ -225,7 +225,7 @@ class AniSearch(BaseCog):
                     if i + 1 == len(anime_manga["externalLinks"]):
                         external_links = external_links[:-2]
 
-                embed = discord.Embed(title=title)
+                embed = discord.Embed(title=title, color=await ctx.embed_color())
                 embed.url = link
                 embed.color = 3447003
                 embed.description = self.description_parser(description)
@@ -265,7 +265,7 @@ class AniSearch(BaseCog):
                 link = f"https://anilist.co/character/{character['id']}"
                 character_anime = [f'[{anime["title"]["userPreferred"]}]({"https://anilist.co/anime/" + str(anime["id"])})' for anime in character["media"]["nodes"] if anime["type"] == "ANIME"]
                 character_manga = [f'[{manga["title"]["userPreferred"]}]({"https://anilist.co/manga/" + str(manga["id"])})' for manga in character["media"]["nodes"] if manga["type"] == "MANGA"]
-                embed = discord.Embed(title=self.format_name(character["name"]["first"], character["name"]["last"]))
+                embed = discord.Embed(title=self.format_name(character["name"]["first"], character["name"]["last"]), color=await ctx.embed_color())
                 embed.url = link
                 embed.color = 3447003
                 embed.description = self.description_parser(character["description"])
@@ -299,7 +299,7 @@ class AniSearch(BaseCog):
                 title = f"[{user['name']}]({link})"
                 title = user["name"]
 
-                embed = discord.Embed(title=title)
+                embed = discord.Embed(title=title, color=await ctx.embed_color())
                 embed.url = link
                 embed.color = 3447003
                 embed.description = self.description_parser(user["about"])
