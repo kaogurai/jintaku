@@ -11,10 +11,7 @@ log.setLevel(logging.DEBUG)
 
 console = logging.StreamHandler()
 
-if logging.getLogger("red").isEnabledFor(logging.DEBUG):
-    console.setLevel(logging.DEBUG)
-else:
-    console.setLevel(logging.INFO)
+console.setLevel(logging.INFO)
 log.addHandler(console)
 
 BaseCog = getattr(commands, "Cog", object)
