@@ -78,7 +78,7 @@ class Imdb(BaseCog):
                     log.debug(data)
 
             # Build Embed
-            embed = discord.Embed()
+            embed = discord.Embed(color=await ctx.embed_color())
             embed.title = "{} ({})".format(data['Title'], data['Year'])
             if data['imdbID']:
                embed.url = "http://www.imdb.com/title/{}".format(data['imdbID'])
@@ -151,7 +151,7 @@ class Imdb(BaseCog):
                     log.debug(data)
 
             # Build Embed
-            embed = discord.Embed()
+            embed = discord.Embed(color=await ctx.embed_color())
             embed.title = "{} ({})".format(data['Title'], data['Year'])
             if data['imdbID']:
                embed.url = "http://www.imdb.com/title/{}".format(data['imdbID'])
