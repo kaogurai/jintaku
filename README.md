@@ -4,6 +4,7 @@
 
 - Renamed `poke` command to `tap`
 - Added color to all roleplay commands
+- Added color to all conversationgames commands
 
 # Installation
 
