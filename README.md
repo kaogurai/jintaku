@@ -2,7 +2,7 @@
 
 # Fork Changelog
 
-- Renamed `poke` command to `tap`
+- Renamed `poke` command to `tap`(conflicts with pokecord)
 - Added color to all roleplay commands
 - Added color to all conversationgames commands
 - Addec color to all imdb commands
@@ -11,9 +11,9 @@
 
 # Installation
 
-`[p]repo add Jintaku-Cogs https://github.com/Jintaku/Jintaku-Cogs-V3/`
+`[p]repo add jintaku-fork https://github.com/kaogurai/jintaki`
 
-`[p]cog install Jintaku-Cogs <cog-name>`
+`[p]cog install jintaku-fork <cog-name>`
 
 `[p]` is your prefix
 
