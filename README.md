@@ -7,6 +7,7 @@
 - Added color to all conversationgames commands
 - Addec color to all imdb commands
 - Added color to all anisearch commands
+- Lowered IMDB logging to Info
 
 # Installation
 
