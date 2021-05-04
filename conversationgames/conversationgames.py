@@ -714,7 +714,7 @@ class ConversationGames(BaseCog):
         i = randint(0, mn - 1)
 
         # Build Embed
-        embed = discord.Embed()
+        embed = discord.Embed(color=await ctx.embed_color())
         embed.title = "Would you rather.."
         embed.description = strings[i]
         await ctx.send(embed=embed)
@@ -729,7 +729,7 @@ class ConversationGames(BaseCog):
         i = randint(0, mn - 1)
 
         # Build Embed
-        embed = discord.Embed()
+        embed = discord.Embed(color=await ctx.embed_color())
         embed.title = "Never have I ever.."
         embed.description = strings[i]
         await ctx.send(embed=embed)
@@ -754,7 +754,7 @@ class ConversationGames(BaseCog):
         name = ctx.guild.members[rp].mention
 
         # Build Embed
-        embed = discord.Embed()
+        embed = discord.Embed(color=await ctx.embed_color())
         embed.title = f"{author.name} asked {user.name}"
         embed.description = strings[rs].format(name=name)
         await ctx.send(embed=embed)
@@ -779,7 +779,7 @@ class ConversationGames(BaseCog):
         name = ctx.guild.members[rp].mention
 
         # Build Embed
-        embed = discord.Embed()
+        embed = discord.Embed(color=await ctx.embed_color())
         embed.title = f"{author.name} dared {user.name}"
         embed.description = strings[rs].format(name=name)
         await ctx.send(embed=embed)
